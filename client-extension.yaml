@@ -1,6 +1,6 @@
-liferay-noClay-theme-css:
+liferay-noClay-theme-css-client-extension:
     clayURL: css/clay.css
     frontendTokenDefinitionJSON: src/frontend-token-definition.json
     mainURL: css/main.css
-    name: noClay Theme CSS
+    name: noClay Theme CSS Client Extension
     type: themeCSS
