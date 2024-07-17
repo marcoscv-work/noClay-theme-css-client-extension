@@ -8,7 +8,7 @@ You can use the compiled file on `dist\` directory, just move it to your `deploy
 
 It includes the basic styles to use the Page Editor; grid, helper classes etc. And also includes a Basic set of Tokens.
 
-![Watch the video demo](https://raw.githubusercontent.com/marcoscv-work/noClay-theme-css-client-extension/main/noClayThemeDemo.png)](https://raw.githubusercontent.com/marcoscv-work/noClay-theme-css-client-extension/main/noClayThemeDemo.mp4)
+https://github.com/user-attachments/assets/73713c31-3ee6-4858-af23-b319bc4ca481
 
 If you need to add more Clay components, for example `Modal`, you can just uncomment the lines on:
 `clay/_components.scss`:
