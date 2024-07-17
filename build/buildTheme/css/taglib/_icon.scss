@@ -1,0 +1,39 @@
+.taglib-icon {
+	text-decoration: none;
+
+	&:not(.btn) {
+		&:hover,
+		&:focus {
+			.taglib-text {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&[lang] > img {
+		vertical-align: baseline;
+		width: 16px;
+	}
+}
+
+.taglib-icon-help {
+	color: $secondary !important;
+
+	&:hover,
+	&:active {
+		color: $dark !important;
+	}
+}
+
+.icon-monospaced {
+	color: inherit;
+	display: inline-block;
+	height: 2rem;
+	line-height: 34px;
+	text-align: center;
+	width: 2rem;
+
+	&.lexicon-icon {
+		padding: 8px;
+	}
+}

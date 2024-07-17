@@ -1,0 +1,304 @@
+// Menubar Vertical MD
+
+$menubar-vertical-expand-md: () !default;
+$menubar-vertical-expand-md: map-deep-merge(
+	(
+		max-width: 15.625rem,
+		menubar-collapse: (
+			display: block,
+		),
+		media-breakpoint-down: (
+			sm: (
+				margin-bottom: 1rem,
+				max-width: none,
+				menubar-collapse: (
+					border-color: transparent,
+					border-style: solid,
+					border-width: 0.0625rem,
+					display: none,
+					position: relative,
+					top: 100%,
+					z-index: $zindex-menubar-vertical-expand-md-collapse-mobile,
+				),
+				nav-nested: (
+					margin-bottom: 0.5rem,
+					margin-top: 0.5rem,
+				),
+				nav-nested-margins: (
+					margin-bottom: 0.5rem,
+					margin-top: 0.5rem,
+				),
+				nav-nested-margins-item: (
+					margin-left: 0,
+				),
+				menubar-toggler: (
+					align-items: center,
+					border-color: transparent,
+					border-style: solid,
+					border-width: 0.0625rem,
+					display: inline-flex,
+					height: 2rem,
+					padding-left: 0.5rem,
+					padding-right: 0.5rem,
+					c-inner: (
+						margin-left: -0.5rem,
+						margin-right: -0.5rem,
+						max-width: none,
+					),
+					lexicon-icon: (
+						margin-top: 0,
+					),
+				),
+			),
+		),
+	),
+	$menubar-vertical-expand-md
+);
+
+$menubar-vertical-transparent-md: () !default;
+$menubar-vertical-transparent-md: map-deep-merge(
+	(
+		nav-link: (
+			color: $gray-600,
+			hover: (
+				color: clay-darken($gray-600, 15),
+			),
+			active: (
+				color: rgba($black, 0.9),
+			),
+			show: (
+				color: c-unset,
+			),
+			disabled: (
+				color: rgba($black, 0.3),
+			),
+		),
+		media-breakpoint-down: (
+			sm: (
+				nav-link: (
+					border-radius: clay-enable-rounded(0),
+					color: $gray-900,
+					hover: (
+						background-color: $gray-100,
+						color: clay-darken($gray-900, 5%),
+					),
+					active: (
+						background-color: $component-active-bg,
+						color: $component-active-color,
+					),
+					active-class: (
+						font-weight: $font-weight-semi-bold,
+					),
+					disabled: (
+						background-color: transparent,
+						color: $gray-600,
+					),
+					show: (
+						background-color: c-unset,
+						color: c-unset,
+						font-weight: c-unset,
+					),
+				),
+				menubar-collapse: (
+					background-color: $white,
+					border-color: $gray-300,
+					border-radius: clay-enable-rounded($border-radius),
+					box-shadow:
+						clay-enable-shadows(0 1px 5px -1px rgba(0, 0, 0, 0.3)),
+				),
+				menubar-toggler: (
+					text-decoration: none,
+				),
+			),
+		),
+	),
+	$menubar-vertical-transparent-md
+);
+
+$menubar-vertical-decorated-md-nav: () !default;
+$menubar-vertical-decorated-md-nav: map-deep-merge(
+	(
+		border-left-color: $gray-300,
+		border-left-style: solid,
+		border-left-width: 0.125rem,
+		display: block,
+		padding-left: 0.5rem,
+	),
+	$menubar-vertical-decorated-md-nav
+);
+
+$menubar-vertical-decorated-md-nav-item-nav: () !default;
+$menubar-vertical-decorated-md-nav-item-nav: map-deep-merge(
+	(
+		margin-bottom: 0.25rem,
+		margin-left: 1rem,
+		margin-top: 0.25rem,
+	),
+	$menubar-vertical-decorated-md-nav-item-nav
+);
+
+$menubar-vertical-decorated-md-nav-link: () !default;
+$menubar-vertical-decorated-md-nav-link: map-deep-merge(
+	(
+		padding-left: 1rem !important,
+	),
+	$menubar-vertical-decorated-md-nav-link
+);
+
+$menubar-vertical-decorated-md-nav-link-after-active: () !default;
+$menubar-vertical-decorated-md-nav-link-after-active: map-deep-merge(
+	(
+		background-color: $primary-l2,
+		bottom: 0,
+		content: '',
+		display: block,
+		left:
+			math-sign(map-get($menubar-vertical-decorated-md-nav, padding-left)) -
+			map-get($menubar-vertical-decorated-md-nav, border-left-width),
+		position: absolute,
+		top: 0,
+		width: map-get($menubar-vertical-decorated-md-nav, border-left-width),
+	),
+	$menubar-vertical-decorated-md-nav-link-after-active
+);
+
+// Menubar Vertical LG
+
+$menubar-vertical-expand-lg: () !default;
+$menubar-vertical-expand-lg: map-deep-merge(
+	(
+		max-width: 15.625rem,
+		menubar-collapse: (
+			display: block,
+		),
+		media-breakpoint-down: (
+			md: (
+				margin-bottom: 1rem,
+				max-width: none,
+				menubar-collapse: (
+					border-color: transparent,
+					border-style: solid,
+					border-width: 0.0625rem,
+					display: none,
+					position: relative,
+					top: 100%,
+					z-index: $zindex-menubar-vertical-expand-md-collapse-mobile,
+				),
+				nav-nested: (
+					margin-bottom: 0.5rem,
+					margin-top: 0.5rem,
+				),
+				nav-nested-margins: (
+					margin-bottom: 0.5rem,
+					margin-top: 0.5rem,
+				),
+				nav-nested-margins-item: (
+					margin-left: 0,
+				),
+				menubar-toggler: (
+					align-items: center,
+					border-color: transparent,
+					border-style: solid,
+					border-width: 0.0625rem,
+					display: inline-flex,
+					height: 2rem,
+					padding-left: 0.5rem,
+					padding-right: 0.5rem,
+					c-inner: (
+						margin-left: -0.5rem,
+						margin-right: -0.5rem,
+						max-width: none,
+					),
+					lexicon-icon: (
+						margin-top: 0,
+					),
+				),
+			),
+		),
+	),
+	$menubar-vertical-expand-lg
+);
+
+$menubar-vertical-transparent-lg: () !default;
+$menubar-vertical-transparent-lg: map-deep-merge(
+	(
+		nav-link: (
+			color: $gray-600,
+			hover: (
+				color: clay-darken($gray-600, 15),
+			),
+			active: (
+				color: rgba($black, 0.9),
+			),
+			show: (
+				color: c-unset,
+			),
+			disabled: (
+				color: rgba($black, 0.3),
+			),
+		),
+		media-breakpoint-down: (
+			md: (
+				nav-link: (
+					border-radius: clay-enable-rounded(0),
+					color: $gray-900,
+					hover: (
+						background-color: $gray-100,
+						color: clay-darken($gray-900, 5%),
+					),
+					active: (
+						background-color: $component-active-bg,
+						color: $component-active-color,
+					),
+					active-class: (
+						font-weight: $font-weight-semi-bold,
+					),
+					disabled: (
+						background-color: transparent,
+						color: $gray-600,
+					),
+					show: (
+						background-color: c-unset,
+						color: c-unset,
+						font-weight: c-unset,
+					),
+				),
+				menubar-collapse: (
+					background-color: $white,
+					border-color: $gray-300,
+					border-radius: clay-enable-rounded($border-radius),
+					box-shadow:
+						clay-enable-shadows(0 1px 5px -1px rgba(0, 0, 0, 0.3)),
+				),
+				menubar-toggler: (
+					text-decoration: none,
+				),
+			),
+		),
+	),
+	$menubar-vertical-transparent-lg
+);
+
+$menubar-vertical-decorated-lg-nav: () !default;
+$menubar-vertical-decorated-lg-nav: map-deep-merge(
+	$menubar-vertical-decorated-md-nav,
+	$menubar-vertical-decorated-lg-nav
+);
+
+$menubar-vertical-decorated-lg-nav-item-nav: () !default;
+$menubar-vertical-decorated-lg-nav-item-nav: map-deep-merge(
+	$menubar-vertical-decorated-md-nav-item-nav,
+	$menubar-vertical-decorated-lg-nav-item-nav
+);
+
+$menubar-vertical-decorated-lg-nav-link: () !default;
+$menubar-vertical-decorated-lg-nav-link: map-deep-merge(
+	$menubar-vertical-decorated-md-nav-link,
+	$menubar-vertical-decorated-lg-nav-link
+);
+
+$menubar-vertical-decorated-lg-nav-link-after-active: () !default;
+$menubar-vertical-decorated-lg-nav-link-after-active: map-deep-merge(
+	$menubar-vertical-decorated-md-nav-link-after-active,
+	$menubar-vertical-decorated-lg-nav-link-after-active
+);

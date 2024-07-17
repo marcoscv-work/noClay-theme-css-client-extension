@@ -1,0 +1,6 @@
+liferay-noClay-theme-css:
+    clayURL: css/clay.css
+    frontendTokenDefinitionJSON: src/frontend-token-definition.json
+    mainURL: css/main.css
+    name: noClay Theme CSS
+    type: themeCSS
